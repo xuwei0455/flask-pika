@@ -273,3 +273,5 @@ class ProxyContextManager(object):
         else:
             self.instance.close()
 
+    def __hash__(self):
+        return hash(self.instance)
